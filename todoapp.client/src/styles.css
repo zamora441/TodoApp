@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Josefin Sans", system-ui, sans-serif;
+        font-size: 18px;
+    }
+}
+
+@layer components{
+    .label{
+        @apply font-semibold text-lg;
+    }
+
+    .input-container{
+        @apply flex flex-col items-start relative;
+    }
+
+    .input{
+        @apply w-full p-2 placeholder:text-base rounded-lg dark:bg-very-dark-desaturated-blue border-2 dark:border-0 dark:text-light-grayish-blue ;
+    }
+
+    .input.error{
+        @apply border-red-400 placeholder:text-red-400 dark:border-2 dark:border-red-700 dark:placeholder:text-red-600 ;
+    }
+
+    .blue-button{
+        @apply w-full bg-blue-500 p-2 rounded-xl text-white font-semibold text-lg hover:bg-blue-700 hover:-translate-y-1 duration-500 transition-all disabled:bg-gray-500 disabled:pointer-events-none flex justify-center items-center dark:hover:bg-green-800 dark:bg-green-700 dark:disabled:bg-gray-500;
+    }
+
+    .modal-button{
+            @apply py-1 px-3 rounded-md text-white font-semibold text-base  hover:-translate-y-1 duration-500 transition-all disabled:bg-gray-500 flex justify-center items-center w-full disabled:pointer-events-none dark:disabled:bg-gray-500;
+    }
+
+    .error-input{
+        @apply absolute text-red-500 text-xs dark:text-red-500;
+    }
+
+} 
