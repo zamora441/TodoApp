@@ -13,6 +13,8 @@ tasks as complete.
 -   Edit existing tasks
 -   Delete tasks
 -   Mark tasks as complete
+-   User registrtion
+-   User login
 -   Responsive design based on the Frontend Mentor challenge
 
 ## Technologies Used
