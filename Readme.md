@@ -13,7 +13,7 @@ tasks as complete.
 -   Edit existing tasks
 -   Delete tasks
 -   Mark tasks as complete
--   User registrtion
+-   User registration
 -   User login
 -   Responsive design based on the Frontend Mentor challenge
 
